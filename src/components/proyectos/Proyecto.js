@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Proyecto = ({ proyecto }) => {
+
+    console.log(proyecto)
     return (
         <li>
             <button
