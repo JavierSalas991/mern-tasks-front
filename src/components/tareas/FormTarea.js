@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import proyectoContext from '../../context/proyectos/proyectoContext';
 
 const FormTarea = () => {
-    return (
-        <div className='formulario'>
 
+    const proyectosContext = useContext(proyectoContext);
+    const { proyecto } = proyectosContext;
+
+    if (!proyecto) return null
+
+    return (
+
+        <div className='formulario'>
             <form>
                 <div className='contenedor-input'>
                     <input
